@@ -9,6 +9,10 @@ export default {
       sans: ['Bubblegum Sans', 'cursive']
     },
     extend: {
+      backgroundImage: {
+        wave: 'url(./src/assets/backgrounds/wave.svg)',
+        'wave-variant': 'url(./src/assets/backgrounds/wave-variant.svg)'
+      },
       colors: {
         primary: '#AFFF9A',
         secondary: '#FCBB4D',
