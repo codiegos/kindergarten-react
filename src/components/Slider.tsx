@@ -3,16 +3,11 @@ import { useState, useEffect } from 'react'
 import { LeftArrowIcon, RightArrowIcon } from './Icons'
 import hands from '../assets/images/paiting-kid.webp'
 import a from '../assets/images/a.webp'
+import { type Slide } from '../types'
+
+const slides: Slide[] = [{ imageUrl: hands }, { imageUrl: a }]
 
 function Slider () {
-  const slides = [
-    {
-      url: hands
-    },
-    {
-      url: a
-    }
-  ]
   const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
@@ -39,7 +34,7 @@ function Slider () {
   return (
     <div className='max-w-3xl h-96 lg:h-[40rem] w-full relative group '>
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        style={{ backgroundImage: `url(${slides[currentIndex].imageUrl})` }}
         className='w-full h-full bg-center bg-cover duration-500 lg:rounded-b-[40rem] lg:rounded-t-[15rem] ring ring-teal-200'
       />
       {/* Left Arrow */}
