@@ -35,7 +35,7 @@ function Slider () {
     <div className='max-w-3xl h-96 lg:h-[40rem] w-full relative group '>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].imageUrl})` }}
-        className='w-full h-full bg-center bg-cover duration-500 lg:rounded-b-[40rem] lg:rounded-t-[15rem] ring ring-teal-200'
+        className='w-full h-full bg-center bg-cover duration-500 rounded lg:rounded-b-[40rem] lg:rounded-t-[15rem] ring ring-teal-200'
       />
       {/* Left Arrow */}
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 cursor-pointer'>

@@ -55,7 +55,7 @@ const Navbar = () => {
           </label>
           {/* END Responsive Hamburger */}
           {/* BEGIN Sidebar */}
-          <div className='peer-checked:translate-x-0 translate-x-[-136%] fixed inset-0 w-4/6 text-2xl bg-teal-200/95 lg:bg-transparent transition duration-500 lg:text-xl lg:w-auto lg:static lg:shadow-none lg:translate-x-0'>
+          <div className='peer-checked:translate-x-0 translate-x-[-136%] fixed inset-0 w-4/6 text-2xl shadow-md shadow-gray-400 bg-white transition duration-500 lg:border-r-0 lg:text-xl lg:w-auto lg:static lg:shadow-none lg:translate-x-0'>
             <div className='flex flex-col h-full justify-between lg:items-center lg:flex-row'>
               {/* BEGIN Nav items */}
               <ul className='px-6 pt-32 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0'>
@@ -66,9 +66,9 @@ const Navbar = () => {
                       onClick={() => {
                         setCloseMenu(!closeMenu)
                       }}
-                      className='group relative cursor-pointer before:absolute before:inset-x-0 before:bottom-0 before:h-[5px] before:rounded-xl before:origin-right before:scale-x-0 before:bg-teal-200 lg:before:bg-teal-200 before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                      className='group relative cursor-pointer before:absolute before:inset-x-0 before:bottom-0 before:h-[5px] before:rounded-xl before:origin-right before:scale-x-0 before:bg-amber-400 lg:before:bg-teal-200 before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                     >
-                      <span className='relative group-hover:text-white lg:group-hover:text-teal-500 duration-300'>
+                      <span className='relative group-hover:text-orange-400 lg:group-hover:text-teal-500 duration-300'>
                         {label}
                       </span>
                     </a>
@@ -78,7 +78,7 @@ const Navbar = () => {
               {/* END Nav items */}
 
               {/* BEGIN Responsive Social media */}
-              <nav className='flex gap-3 items-center px-6 border-t-2 border-teal-500 py-8 lg:hidden'>
+              <nav className='flex gap-3 items-center px-6 border-t-2 border-teal-300 py-8 lg:hidden'>
                 <a
                   href='https://www.facebook.com/profile.php?id=100088444905927'
                   target='_blank'
