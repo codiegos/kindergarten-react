@@ -1,7 +1,7 @@
 const Figure = () => {
   return (
     <svg
-      className='absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-teal-100'
+      className='absolute top-0 -mt-5 h-6 w-full text-teal-100 sm:-mt-10 sm:h-16'
       preserveAspectRatio='none'
       viewBox='0 0 1440 54'
     >
@@ -17,8 +17,8 @@ export const Footer = () => {
   return (
     <div className='relative mt-16 bg-teal-100'>
       <Figure />
-      <div className='px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
-        <div className='grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4'>
+      <div className='mx-auto px-4 pt-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8'>
+        <div className='row-gap-6 mb-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-4'>
           <div className='sm:col-span-2'>
             <a
               href='/'
@@ -26,8 +26,8 @@ export const Footer = () => {
               title='Company'
               className='inline-flex items-center'
             >
-              <img src='logo.png' alt='logo' className='w-12 h-12' />
-              <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
+              <img src='logo.png' alt='logo' className='h-12 w-12' />
+              <span className='ml-2 text-xl font-bold uppercase tracking-wide text-gray-800'>
                 Jardín Las Ardillitas
               </span>
             </a>
@@ -54,7 +54,7 @@ export const Footer = () => {
                 href='tel:850-123-5021'
                 aria-label='Our phone'
                 title='Our phone'
-                className='transition-colors duration-300 text-orange-400 hover:text-orange-500'
+                className='text-orange-400 transition-colors duration-300 hover:text-orange-500'
               >
                 850-123-5021
               </a>
@@ -65,7 +65,7 @@ export const Footer = () => {
                 href='mailto:info@lorem.mail'
                 aria-label='Our email'
                 title='Our email'
-                className='transition-colors duration-300 text-orange-400 hover:text-orange-500'
+                className='text-orange-400 transition-colors duration-300 hover:text-orange-500'
               >
                 info@lorem.mail
               </a>
@@ -78,7 +78,7 @@ export const Footer = () => {
                 rel='noopener noreferrer'
                 aria-label='Our address'
                 title='Our address'
-                className='transition-colors duration-300 text-orange-400 hover:text-orange-500'
+                className='text-orange-400 transition-colors duration-300 hover:text-orange-500'
               >
                 312 Lovely Street, NY
               </a>
@@ -88,7 +88,7 @@ export const Footer = () => {
             <span className='text-base font-bold tracking-wide text-gray-900'>
               Redes
             </span>
-            <div className='flex items-center mt-1 space-x-3'>
+            <div className='mt-1 flex items-center space-x-3'>
               <a
                 href='/'
                 className='text-gray-500 transition-colors duration-300 hover:text-orange-400'
@@ -121,7 +121,7 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        <div className='flex  justify-center py-5 border-t-2 border-white lg:flex-row'>
+        <div className='flex  justify-center border-t-2 border-white py-5 lg:flex-row'>
           <p className='text-sm text-gray-600'>
             © Copyright Lorem Inc. All rights reserved.
           </p>

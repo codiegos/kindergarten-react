@@ -1,10 +1,10 @@
 function Gallery () {
   return (
-    <section className='bg-gradient-to-t to-15% from-teal-50 to-teal-50 flex flex-col items-center py-24 sm:min-h-screen sm:py-32'>
+    <section className='flex flex-col items-center bg-gradient-to-t from-teal-50 to-teal-50 to-15% py-24 sm:min-h-screen sm:py-32'>
       <div className='container flex flex-col items-center justify-center gap-8 xl:gap-12'>
-        <h1 className='text-3xl lg:text-6xl text-center'>GALERÍA</h1>
+        <h1 className='text-center text-3xl lg:text-6xl'>GALERÍA</h1>
 
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
+        <div className='grid grid-cols-2 gap-4 md:grid-cols-4'>
           <div className='grid gap-4'>
             <div>
               <img

@@ -32,17 +32,17 @@ function Slider () {
   }
 
   return (
-    <div className='max-w-3xl h-96 lg:h-[40rem] w-full relative group '>
+    <div className='group relative h-96 w-full max-w-3xl lg:h-[40rem]'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].imageUrl})` }}
-        className='w-full h-full bg-center bg-cover duration-500 rounded lg:rounded-b-[40rem] lg:rounded-t-[15rem] ring ring-teal-200'
+        className='h-full w-full rounded bg-cover bg-center ring ring-teal-200 duration-500 lg:rounded-b-[40rem] lg:rounded-t-[15rem]'
       />
       {/* Left Arrow */}
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 cursor-pointer'>
+      <div className='absolute left-5 top-[50%] hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl group-hover:block'>
         <LeftArrowIcon onClick={prevSlide} className='h-8 w-8' />
       </div>
       {/* Right Arrow */}
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 cursor-pointer'>
+      <div className='absolute right-5 top-[50%] hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl group-hover:block'>
         <RightArrowIcon onClick={nextSlide} className='h-8 w-8' />
       </div>
     </div>

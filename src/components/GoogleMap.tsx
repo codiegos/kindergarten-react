@@ -5,7 +5,7 @@ function GoogleMap () {
       allowFullScreen
       loading='lazy'
       referrerPolicy='no-referrer-when-downgrade'
-      className='h-96 w-full md:h-[32rem] md:w-[32rem] border-[.1rem] border-orange-200 shadow-md '
+      className='h-96 w-full border-[.1rem] border-orange-200 shadow-md md:h-[32rem] md:w-[32rem] '
     ></iframe>
   )
 }

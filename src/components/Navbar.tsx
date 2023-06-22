@@ -6,7 +6,9 @@ import { type NavItem } from '../types'
 const navItems: NavItem[] = [
   { key: 'inicio', label: 'Inicio', link: '#inicio' },
   { key: 'nosotros', label: 'Nosotros', link: '#nosotros' },
+  { key: 'equipo', label: 'Equipo', link: '#equipo' },
   { key: 'galeria', label: 'Galeria', link: '#galeria' },
+  { key: 'actividades', label: 'Actividades', link: '#actividades' },
   { key: 'horarios', label: 'Horarios', link: '#horarios' },
   { key: 'contacto', label: 'Contacto', link: '#contacto' }
 ]

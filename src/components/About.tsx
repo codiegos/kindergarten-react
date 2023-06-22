@@ -3,19 +3,19 @@ import { GirlIcon, HeartIcon, SeedHandIcon } from './Icons'
 
 function About () {
   return (
-    <section className='bg-gradient-to-b from-teal-100 to-15% to-teal-50 flex flex-col items-center py-24 sm:min-h-screen sm:py-32'>
+    <section className='flex flex-col items-center bg-gradient-to-b from-teal-100 to-5% py-24 sm:min-h-screen sm:py-32'>
       <div className='container flex flex-col items-center justify-center gap-8 xl:gap-12'>
-        <h1 className='text-3xl sm:text-4xl lg:text-6xl text-center'>
+        <h1 className='text-center text-3xl sm:text-4xl lg:text-6xl'>
           NOSOTROS
         </h1>
-        <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
+        <div className='grid grid-cols-1 gap-6 sm:grid-cols-2'>
           <AboutCard
             title='Quiénes Somos'
-            icon={<GirlIcon className='w-16 h-16 bg-teal-300 rounded-full' />}
+            icon={<GirlIcon className='h-16 w-16 rounded-full bg-teal-300' />}
             colSpan='2'
             text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, qut quibusdam, sapiente sint tempora magni explicabo exercitationem veritatis rem repudiandae error ullam molestiae, doloremque perspiciatis sed abab.'
           >
-            <p className='text-lg lg:text-xl text-justify'>
+            <p className='text-justify text-lg lg:text-xl'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               voluptatum, quibusdam, voluptates, quia quos voluptate quod
               voluptatibus quas quibusdam, voluptates, quia quos voluptate quod
@@ -28,14 +28,14 @@ function About () {
           <AboutCard
             title='Misión'
             icon={
-              <SeedHandIcon className='w-16 h-16 bg-amber-300 rounded-full' />
+              <SeedHandIcon className='h-16 w-16 rounded-full bg-amber-300' />
             }
             text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, qut quibusdam, sapiente sint tempora magni explicabo exercitationem veritatis rem repudiandae error ullam molestiae, doloremque perspiciatis sed ab. ab. ab. ab. ab.'
           />
           <AboutCard
             title='Visión'
             icon={
-              <HeartIcon className='w-16 h-16 bg-orange-300 rounded-full' />
+              <HeartIcon className='h-16 w-16 rounded-full bg-orange-300' />
             }
             text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, qut quibusdam, sapiente sint tempora magni explicabo exercitationem veritatis rem repudiandae error ullam molestiae, doloremque perspiciatis sed ab. ab. ab. ab. ab.'
           />
